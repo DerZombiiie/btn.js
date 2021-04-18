@@ -1,3 +1,3 @@
 $(document).ready(() => {
-    var site = new btnpair(YourEntryForOn, YourEntryForOff, SiteTitle)
+    site = new btnpair("#", "#", "Lights:")
 })

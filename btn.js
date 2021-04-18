@@ -4,21 +4,21 @@ class btnpair {
         this.onbtn  = $(".on");
         this.offbtn = $(".off")
         this.headline = $("h1")
-        this.onbtn.on("click" () => {
+        this.onbtn.on("click", () => {
             this.on()
         })
-        this.offbtn.on("click" () => {
+        this.offbtn.on("click", () => {
             this.off()
         })
         this.headline.html(hd)
     }
-    on() {
+    async on() {
         this.headline.css("color", "#EEE")
         return fetch(this.api.on).then(() => {
             this.headline.css("color", "#FFF")
         })
     }
-    off() {
+    async off() {
         this.headline.css("color", "#EEE")
         return fetch(this.api.off).then(() => {
             this.headline.css("color", "#FFF")
