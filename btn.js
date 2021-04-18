@@ -1,5 +1,5 @@
 class btnpair {
-    constructor(on, off, hd) {
+    constructor(off, on, hd) {
         this.api = {"on": on, "off": off}
         this.onbtn  = $(".on");
         this.offbtn = $(".off")
